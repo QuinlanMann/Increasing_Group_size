@@ -21,7 +21,7 @@
 
 ## Dataset Attribution and Usage
 
--   Dataset Title: Data for the article "Increasing group size decreases measures of per capita reproductive success in a joint laying bird"
+-   Dataset Title: Data for the article "Per capita reproductive success decreases with group size in a communally breeding bird"
 
 -   Persistent Identifier:
 
@@ -40,7 +40,7 @@
 
 -   Suggested Citations:
 
-    -   Dataset citation: \> 
+    -   Dataset citation: Data for the article "Per capita reproductive success decreases with group size in a communally breeding bird". v1.0.0. Place of publication: publisher. Beginning date-ending date [date updated; date accessed]. URL.\> 
     -   Corresponding publication: \> 
 
 ## Contact Information
