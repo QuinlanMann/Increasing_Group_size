@@ -73,6 +73,10 @@ for (i in 1:N) {
   
 }
 
+#generating bias corrected measure of slope and intercept based off Jackknifed values.
+bias_pc1<-(N*coef(lm(PCA_DAT$DATE~PCA_DAT$PC1))[2]) - (N - 1)*mean(jack.pc1)
+bias_int2<-(N*coef(lm(PCA_DAT$DATE~PCA_DAT$PC1))[1]) - (N - 1)*mean(jack.int2)
+
 #summary of model comparing Date with PC1
 tidy(lm(DATE~PC1, data=PCA_DAT))
 summary(lm(DATE~PC1, data=PCA_DAT))
@@ -80,8 +84,9 @@ summary(lm(DATE~PC1, data=PCA_DAT))
 #plot of regression lines from JKLOOCV showing the variation in data after omitting
 tiff(file="C:/Users/quinl/Desktop/ANI/Regression.tiff", width=4, height=4, units="in", res=600)
 ggplot(PCA_DAT,aes(PC1, DATE))+
-  geom_jitter(width=0, height=)+
-  geom_abline(slope = jack.pc1, intercept = jack.int2)+
+  geom_jitter(width=0, height=0.1)+
+  geom_abline(slope = jack.pc1, intercept = jack.int2, lty=2)+
+  geom_abline(slope = bias_pc1, intercept = bias_int2, color="red")+
   labs(x="PC1 values", y="Known age values", title="")+
   theme(text = element_text(size = 12, color="black"),
         axis.text.x = element_text(size=12, color = "black"),
