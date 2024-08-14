@@ -102,8 +102,8 @@
 
 -   SBAN_Reproductive_success.R
 -   NEST_SUMMARY_ANIS.csv
--   Supplemental_TAbles.xlsx
--   README_Increasinggroupsize.md
+-   Supplemental_Tables.xlsx
+-   README.md
 
 ## Setup
 
@@ -213,7 +213,7 @@
                 - If group did not fledge at least one chick it was determined to be a failure (FAIL)
         - Also includes output of Fisher's exact test
 
-## Details for: README_Increasinggroupsize.md
+## Details for: README.md
 -   Read me containing pertinent information for the dataset and manuscript
 
 END OF README
