@@ -111,7 +111,7 @@
 
 -   Relationships between files/folders: n/a
 
--   Recommended software/tools: R version 4.2.0, RStudio version 2022.12.0.353
+-   Recommended software/tools: R version 4.4.1 RStudio version 2024.4.2.764
 
 ## File Usage
 
@@ -181,11 +181,23 @@
         - model outputs from count data assessing proportion of success across multiple reproductive stages
         - uses the dataset that looked at only first (known) successful nests per group if multiple occurred
     - S6 Pooled group-year data, quadratic added, count models
+        - model outputs from count data assessing overall and per capita success across multiple reproductive stages with added quadratic term
+        - uses the dataset Pooled group-year dataset that reported models are run on
     - S7 Pooled group-year data, quadratic added, probability models
+        - model outputs from count data assessing proportion of success across multiple reproductive stages with added quadratic term
+        - uses the dataset Pooled group-year dataset that reported models are run on
     - S8 First nest only data, quadratic added, count models
+        - model outputs from count data assessing overall and per capita success across multiple reproductive stages with added quadratic term
+        - uses the dataset that looked at only first (known) nests per group if multiple occurred
     - S9 First nest only data, quadratic added, probability models
+        - model outputs from count data assessing proportion of success across multiple reproductive stages with added quadratic term
+        - uses the dataset that looked at only first (known) nests per group if multiple occurred
     - S10 First successful nest only data, quadratic added, count models
+        - model outputs from count data assessing overall and per capita success across multiple reproductive stages with added quadratic term
+        - uses the dataset that looked at only first (known) successful nests per group if multiple occurred
     - S11 First successful nest only data, quadratic added, probability models 
+        - model outputs from count data assessing proportion of success across multiple reproductive stages with added quadratic term
+        - uses the dataset that looked at only first (known) successful nests per group if multiple occurred
     - S12 Nest count and group size
         - Dimensions: 365R x 2C
         - Variables:
@@ -203,4 +215,5 @@
 
 ## Details for: README_Increasinggroupsize.md
 -   Read me containing pertinent information for the dataset and manuscript
+
 END OF README
