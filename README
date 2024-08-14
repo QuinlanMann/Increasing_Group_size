@@ -11,7 +11,7 @@
 ## Dataset Version and Release History
 
 -   Current Version:
-    -   Number: 1.0.0
+    -   Number: 1.0.2
     -   Date: 2024-08-14
     -   Persistent identifier: DOI: 
     -   Summary of changes: n/a
@@ -93,15 +93,16 @@
 
 ## Summary Metrics
 
--   File count: 3
--   Total file size: 84KB
+-   File count: 4
+-   Total file size: 126KB
 -   Range of individual file sizes: 5 KB - 54 KB
--   File formats: .csv, .R
+-   File formats: .csv, .R, .xlsx
 
 ## Table of Contents
 
 -   SBAN_Reproductive_success.R
 -   NEST_SUMMARY_ANIS.csv
+-   Supplemental_TAbles.xlsx
 -   README_Increasinggroupsize.md
 
 ## Setup
@@ -114,8 +115,6 @@
 
 ## File Usage
 
-
-    
 # File/Folder Details
 
 ## Details for: SBAN_Reproductive_success.R
@@ -161,6 +160,8 @@
         -   SUCC: Successfully fledged
         -   UNK: Unknown
     -   Notes: IF PRESENT, notes about the nest/group
+
+## Details for: Supplemental_Tables.xlsx
 
 ## Details for: README_Increasinggroupsize.md
 -   Read me containing pertinent information for the dataset and manuscript
