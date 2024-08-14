@@ -2,17 +2,17 @@
 
 ## Provenance for this README
 
--   File name: README_IncreasingGroupSize.txt
+-   File name: README_SBAN_Reproductive_success.txt
 -   Author: Quinlan M Mann
--   Other contributors: Leanne A Grieves, James S Quinn
--   Date created: 2023-09-15
--   Date modified: 2023-10-31
+-   Other contributors: Leanne A Grieves, Gregory Schmaltz, & James S Quinn
+-   Date created: 2024-08-14
+-   Date modified: n/a
 
 ## Dataset Version and Release History
 
 -   Current Version:
     -   Number: 1.0.0
-    -   Date: 2023-10-31
+    -   Date: 2024-08-14
     -   Persistent identifier: DOI: 
     -   Summary of changes: n/a
 -   Embargo Provenance: n/a
@@ -27,9 +27,9 @@
 
 -   Dataset Contributors:
 
-    -   Creators: Quinlan M Mann, Leanne A Grieves, James S Quinn
+    -   Creators: Quinlan M Mann, Leanne A Grieves, Gregory Schmaltz, & James S Quinn
 
--   Date of Issue:
+-   Date of Issue: 
 
 -   Publisher: McMaster University
 
@@ -93,15 +93,16 @@
 
 ## Summary Metrics
 
--   File count: 6
--   Total file size: 7.7MB
--   Range of individual file sizes: 3 KB - 3520 KB
--   File formats: .csv, .pdf, .R
+-   File count: 3
+-   Total file size: 84KB
+-   Range of individual file sizes: 5 KB - 54 KB
+-   File formats: .csv, .R
 
 ## Table of Contents
 
--   Annotated code.r
--   
+-   SBAN_Reproductive_success.R
+-   NEST_SUMMARY_ANIS.csv
+-   README_Increasinggroupsize.md
 
 ## Setup
 
@@ -113,34 +114,54 @@
 
 ## File Usage
 
--   
 
-    Annotated code.R
-    
-    Chick_metrics_UnkDates.csv
-
-    MANNQUINLAN_2022_ANIS.csv
-
-    PCA_dat.csv
-    
-    succ.csv
     
 # File/Folder Details
 
-## Details for: Annotated code.R
+## Details for: SBAN_Reproductive_success.R
+-   Description: An r file containing code necessary to run all analyses
+-   Format(s): .R
+-   Size(s): 54 KB
+-   Dimensions: 1200 lines
+-   Variables: n/a
 
--   Description: A r file that contains all the data manipulation and 
+## Details for: NEST_SUMMARY_ANIS.csv
 
--   Format(s): .txt
-
--   Size(s): 3520 KB
-
--   Dimensions: 12533 rows x 105 columns
-
+-   Description: Data used for analyses of Smooth-billed ani reproductive success
+-   Format(s): .csv
+-   Size(s): 19 KB
+-   Dimensions: 453R x 13C
 -   Variables:
+    -   YEAR: Calendar year that the nest and group were observed
+    -   LOCATION: Location within the park wherein the nest was observed
+    -   SITE: USFWS national park where the nest was observed
+        - LC: Laguna Cartagena
+        - CR: Cabo Rojo
+        - UNK: Unknown  
+    -   ADULTS: Number of adults observed within the group
+        - see manuscript for details on how this was determined
+    -   NEST_ATTMPT: Numbered nesting attempt for that group within the year
+    -   TOT_EGGS: total number of eggs that were coutned during nest checks
+        - see manuscript for details on how this was determined
+    -   EGGS_BURIED: number of eggs found within the nest cup below layers of nesting material after groups had completed the nesting attempt
+    -   EGGS_EJECTED: number of eggs found outside the nest during active laying
+    -   EGGS_UNBURIED: number of eggs found within the nest cup that were inubated
+    -   HATCHED: number of eggs that were known to have hatched
+    -   FLEDGED: number of chicks that were known to have fledged 
+    -   NEST FATE: IF KNOWN, the fate of the nest
+        -   ABD: Abandoned
+        -   ABD?: uncertain if abandoned
+        -   DEST: destroyed
+        -   DESTROYED: Destroyed
+        -   DP: Depradated
+        -   DP PSUC: Depradated but stil some chicks survived
+        -   FAIL: Failure
+        -   INS: Insufficient data
+        -   PSUC: partial success
+        -   SUCC: Successfully fledged
+        -   UNK: Unknown
+    -   Notes: IF PRESENT, notes about the nest/group
 
-    -   SV: amplicon sequence variants
-    -   Sample: smooth-billed ani sample (F suffix denotes a feather sample, no suffix denotes a preen gland sample)
-    -   tax.vector: SV taxonomic assignment (see main text for details)
-
+## Details for: README_Increasinggroupsize.md
+-   Read me containing pertinent information for the dataset and manuscript
 END OF README
