@@ -5,8 +5,8 @@
 -   File name: README_SBAN_Reproductive_success.txt
 -   Author: Quinlan M Mann
 -   Other contributors: Leanne A Grieves, Gregory Schmaltz, & James S Quinn
--   Date created: 2024-08-14
--   Date modified: n/a
+-   Date created: 2023-10-31
+-   Date modified: 2024-08-14
 
 ## Dataset Version and Release History
 
@@ -162,6 +162,44 @@
     -   Notes: IF PRESENT, notes about the nest/group
 
 ## Details for: Supplemental_Tables.xlsx
+-   Description: Supplemental results for analyses of Smooth-billed ani reproductive success
+-   Format(s): .xlsx
+-   Size(s): 50 KB
+-   Dimensions: 13 sheets
+    - S1 Summary statistics of different datasets
+        - Summary statistics of all datasets
+    - S2 First nest only data, count models
+        - model outputs from count data assessing overall and per capita success across multiple reproductive stages
+        - uses the dataset that looked at only first (known) nests per group if multiple occurred
+    - S3 First nest only data, probability models
+        - model outputs from count data assessing proportion of success across multiple reproductive stages
+        - uses the dataset that looked at only first (known) nests per group if multiple occurred
+    - S4 First successful nest only data, count models
+        - model outputs from count data assessing overall and per capita success across multiple reproductive stages
+        - uses the dataset that looked at only first (known) successful nests per group if multiple occurred
+    - S5 First successful nest only data, probability models
+        - model outputs from count data assessing proportion of success across multiple reproductive stages
+        - uses the dataset that looked at only first (known) successful nests per group if multiple occurred
+    - S6 Pooled group-year data, quadratic added, count models
+    - S7 Pooled group-year data, quadratic added, probability models
+    - S8 First nest only data, quadratic added, count models
+    - S9 First nest only data, quadratic added, probability models
+    - S10 First successful nest only data, quadratic added, count models
+    - S11 First successful nest only data, quadratic added, probability models 
+    - S12 Nest count and group size
+        - Dimensions: 365R x 2C
+        - Variables:
+            - FEM: Female group size 
+            - NESTS: Number of (known) nesting attempts
+        - Also includes output of Fisher's exact test
+    - S13 Survival of nest and group size:
+        - Dimensions: 414 x 2C
+        - Variables:
+            - FEM: Female group size 
+            - SURV: Categorical variable of success
+                - If group fledged at least one chick it was determined to be successful (SUCC)
+                - If group did not fledge at least one chick it was determined to be a failure (FAIL)
+        - Also includes output of Fisher's exact test
 
 ## Details for: README_Increasinggroupsize.md
 -   Read me containing pertinent information for the dataset and manuscript
