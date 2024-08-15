@@ -1205,3 +1205,17 @@ ggbarstats(
     "Fisher's exact test", "\np-value = ",
     ifelse(test2$p.value < 0.001, "< 0.001", round(test2$p.value, 3))))
 
+#Anova looking at the reported models with and without quadratic terms----
+anova(Tot.nb2.1, Tot.nb2.1q)
+anova(Inc.nb2.1, Inc.nb2.1q)
+anova(Hatc.p.1, Hatc.p.1q)
+anova(Fled.p.1, Fled.p.1q)
+anova(Tot.nb2.2, Tot.nb2.2q)
+anova(Inc.nb2.2, Inc.nb2.2q)
+anova(Hatc.p.2, Hatc.p.2q)
+anova(Fled.p.2, Fled.p.2q)
+anova(EpEg.b.1, EpEg.b.1q)
+anova(HpEg.b.1, HpEg.b.1q)
+anova(FpHa.b.1, FpHa.b.1q)
+
+
