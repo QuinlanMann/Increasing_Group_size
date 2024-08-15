@@ -27,7 +27,8 @@
 
 -   Dataset Contributors:
 
-    -   Creators: Quinlan M Mann, Leanne A Grieves, Gregory Schmaltz, & James S Quinn
+    -   Creators: Quinlan M Mann
+        - Data collection: Quinlan M Mann, Leanne A Grieves, Joshu Robertson-Tabh, Gregory Schmaltz, & James S Quinn
 
 -   Date of Issue: 2024-08-14
 
@@ -74,7 +75,7 @@
 
 ## Dates and Locations
 
--   Dates of data collection: Field data collected between september 1998-December 2021
+-   Dates of data collection: Field data collected between September 1998-December 2021
 
 -   Geographic locations of data collection: Fieldwork conducted in Cabo Rojo National Wildlife Refuge, and Laguna Cartagena National Wildlife Refuge, Puerto Rico (see publication for more details)
 
@@ -136,18 +137,18 @@
 -   Variables:
     -   YEAR: Calendar year that the nest and group were observed
     -   LOCATION: Location within the park wherein the nest was observed
-    -   SITE: USFWS national park where the nest was observed
+    -   SITE: U.S. Fish and Wildlife Service (USFWS) National Wildlife Refuges (or adjacent property) where the group and nest was observed
         - LC: Laguna Cartagena
         - CR: Cabo Rojo
         - UNK: Unknown  
     -   ADULTS: Number of adults observed within the group
         - see manuscript for details on how this was determined
     -   NEST_ATTMPT: Numbered nesting attempt for that group within the year
-    -   TOT_EGGS: total number of eggs that were coutned during nest checks
+    -   TOT_EGGS: total number of eggs that were counted during nest checks
         - see manuscript for details on how this was determined
     -   EGGS_BURIED: number of eggs found within the nest cup below layers of nesting material after groups had completed the nesting attempt
     -   EGGS_EJECTED: number of eggs found outside the nest during active laying
-    -   EGGS_UNBURIED: number of eggs found within the nest cup that were inubated
+    -   EGGS_UNBURIED: number of eggs found within the nest cup that were incubated
     -   HATCHED: number of eggs that were known to have hatched
     -   FLEDGED: number of chicks that were known to have fledged 
     -   NEST FATE: IF KNOWN, the fate of the nest
@@ -155,8 +156,8 @@
         -   ABD?: uncertain if abandoned
         -   DEST: destroyed
         -   DESTROYED: Destroyed
-        -   DP: Depradated
-        -   DP PSUC: Depradated but stil some chicks survived
+        -   DP: Depredated
+        -   DP PSUC: Depredated but some chicks survived
         -   FAIL: Failure
         -   INS: Insufficient data
         -   PSUC: partial success
