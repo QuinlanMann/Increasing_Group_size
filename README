@@ -1,7 +1,7 @@
 # Data from: Per capita reproductive success decreases with group size in a communally breeding bird
 
 ## This repository includes all scripts and data to reproduce the analyses associated with the manuscript: 
-Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decreases with group size in a communally breeding bird [JOURNAL INFO AFTER ACCEPTANCE] 
+Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decreases with group size in a communally breeding bird
 
 ## A static copy of this repository is available on .
 
@@ -34,8 +34,7 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 
 -   Dataset Contributors:
 
-    -   Creators: Quinlan M Mann
-        - Data collection: Quinlan M Mann, Leanne A Grieves, Joshu Robertson-Tabh, Gregory Schmaltz, & James S Quinn
+    -   Creators: Quinlan M Mann, Leanne A Grieves, Gregory Schmaltz, & James S Quinn
 
 -   Date of Issue: 2024-08-14
 
@@ -55,17 +54,37 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 
 -   Name: Quinlan M. Mann
 
--   Affiliations: Department of Biology, McMaster University
+    -   Affiliations: Department of Biology, McMaster University
+    
+    -   ORCID ID: 0009-0005-3835-0457
+    
+    -   Email: [mannq\@mcmaster.ca](mailto:mannq@mcmaster.ca){.email}
+    
+    -   Alternate Email: [quinlanmmann\@gmail.com](mailto:quinlanmmann@gmail.com){.email}
+    
+    -   Address: e-mail preferred
 
--   ORCID ID: 0009-0005-3835-0457
+-   Name: Leanne A. Grieves
 
--   Email: [mannq\@mcmaster.ca](mailto:mannq@mcmaster.ca){.email}
+    -   Affiliations: Department of Biology, School of Earth, Environment and Society, McMaster University, Cornell Lab of Ornithology
+    
+    -   ORCID ID: 0000-0002-6836-2177
+    
+    -   Email: [lag296\@cornell.edu](mailto:lag296@cornell.edu){.email}
+    
+    -   Alternate Email: [lagrieves\@gmail.com](mailto:lagrieves@gmail.com){.email}
+    
+    -   Address: e-mail preferred
 
--   Alternate Email: [quinlanmmann\@gmail.com](mailto:quinlanmmann@gmail.com){.email}
+-   Name: Gregory Schmaltz
 
--   Address: e-mail preferred
+    -   Affiliations: Department of Biology, McMaster University, 3Department of Biology, University of the Fraser Valley
+    
+    -   Email: [gregory.schmaltz\@ufv.ca](mailto:gregory.schmaltz@ufv.ca){.email}
+    
+    -   Address: e-mail preferred
 
--   Alternative Contact: Corresponding Author and Master's Supervisor
+-   Alternative Contact: Corresponding Author and Supervisor
 
     -   Name: James S Quinn
     -   Affiliations: Department of Biology, McMaster University
@@ -225,6 +244,9 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
         - Also includes output of Fisher's exact test
 
 ## Details for: README.md
--   Read me containing pertinent information for the dataset and manuscript
+-   Description: Read me containing pertinent information for the dataset and manuscript
+-   Format(s): .txt
+-   Size(s): 5 KB
+-   Dimensions: 252 lines
 
 END OF README
