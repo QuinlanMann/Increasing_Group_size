@@ -777,50 +777,6 @@ df4<-as.data.frame(rbind(
                         `(Intercept)`="Intercept", 
                         `ANI4.SITELC`="Study Site")))))
 
-df5<-as.data.frame(cbind(
-  (rbind(
-    c(NA, NA, "Eggs Laid", NA, NA, NA, NA, NA),
-    (tidy(Tot.nb2.1q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Incubated", NA, NA, NA, NA, NA),
-    (tidy(Inc.nb2.1q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Hatched", NA, NA, NA, NA, NA),
-    (tidy(Hatc.p.1q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Chicks Fledged", NA, NA, NA, NA, NA),
-    (tidy(Fled.p.1q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))))),
-  (rbind(
-    c(NA, NA, "Eggs Laid per capita", NA, NA, NA, NA, NA),
-    (tidy(Tot.nb2.2q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Incubated per capita", NA, NA, NA, NA, NA),
-    (tidy(Inc.nb2.2q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Hatched per capita", NA, NA, NA, NA, NA),
-    (tidy(Hatc.p.2q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Chicks Fledged per capita", NA, NA, NA, NA, NA),
-    (tidy(Fled.p.2q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))))))[-c(1,2,9:12)])
-
 #summary stats of various datsets
 sumstats<-cbind(
   rbind(
@@ -917,7 +873,7 @@ data_frames <- list("S1 Summary statistics of different datasets" = sumstats,
 library(writexl)
 
 #writing to my local
-write_xlsx(data_frames, "C:/Users/quinl/Desktop/ANI/Supplemental.xlsx")
+#write_xlsx(data_frames, "C:/Users/quinl/Desktop/ANI/Supplemental.xlsx")
 
 # supplemental figures----
 library(ggstatsplot)
