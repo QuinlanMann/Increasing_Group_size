@@ -648,120 +648,6 @@ FpHa.b.1_ANI4 <- glmmTMB(ANI4.FpHa ~ FEM+ANI4.SITE+(1|ANI4.SITE:ANI4.LOCATION)+(
                          weights=ANI4.HATCHED,
                          family = binomial(link = "logit"))
 
-#adding a quadratic term to all models
-Tot.nb2.1q<-glmmTMB(TOT_EGGS~poly(FEM,2)+NESTS+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                    family="nbinom2", 	
-                    data = ANI2)	
-Inc.nb2.1q<-glmmTMB(EGGS_UNBURIED~poly(FEM,2)+NESTS+SITE+(1|SITE:LOCATION)+(1|YEAR),	
-                    family="nbinom2", 	
-                    data = ANI2)	
-Hatc.p.1q<- glmmTMB(HATCHED ~poly(FEM,2)+NESTS+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                    data=ANI2, 	
-                    family = poisson(link="log"))	
-Fled.p.1q<- glmmTMB(FLEDGED ~poly(FEM,2)+NESTS+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                    data=ANI2, 	
-                    family = poisson(link="log"))	
-Tot.nb2.1_ANI3q<-glmmTMB(TOT_EGGS~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                         family="nbinom2", 	
-                         data = ANI3)	
-Inc.nb2.1_ANI3q<-glmmTMB(EGGS_UNBURIED~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),	
-                         family="nbinom2", 	
-                         data = ANI3)	
-Hatc.p.1_ANI3q<- glmmTMB(HATCHED ~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                         data=ANI3, 	
-                         family = poisson(link="log"))	
-Fled.p.1_ANI3q<- glmmTMB(FLEDGED ~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                         data=ANI3, 	
-                         family = poisson(link="log"))	
-Tot.nb2.1_ANI4q<-glmmTMB(TOT_EGGS~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                         family="nbinom2", 	
-                         data = ANI4)	
-Inc.nb2.1_ANI4q<-glmmTMB(EGGS_UNBURIED~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),	
-                         family="nbinom2", 	
-                         data = ANI4)	
-Hatc.p.1_ANI4q<- glmmTMB(HATCHED ~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                         data=ANI4, 	
-                         family = poisson(link="log"))	
-Fled.p.1_ANI4q<- glmmTMB(FLEDGED ~poly(FEM,2)+SITE+(1|SITE:LOCATION)+(1|YEAR),
-                         data=ANI4, 	
-                         family = poisson(link="log"))	
-
-#models with offsets to account for per female output
-Tot.nb2.2q<-glmmTMB(TOT_EGGS~poly(FEM,2)+NESTS+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                    family="nbinom2", 	
-                    data = ANI2)	
-Inc.nb2.2q<-glmmTMB(EGGS_UNBURIED~poly(FEM,2)+NESTS+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                    family="nbinom2", 	
-                    data = ANI2)	
-Hatc.p.2q<- glmmTMB(HATCHED ~poly(FEM,2)+NESTS+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                    data=ANI2, 	
-                    family = poisson(link="log"))	
-Fled.p.2q<- glmmTMB(FLEDGED ~poly(FEM,2)+NESTS+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                    data=ANI2, 	
-                    family = poisson(link="log"))
-Tot.nb2.2_ANI3q<-glmmTMB(TOT_EGGS~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         family="nbinom2", 	
-                         data = ANI3)	
-Inc.nb2.2_ANI3q<-glmmTMB(EGGS_UNBURIED~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         family="nbinom2", 	
-                         data = ANI3)	
-Hatc.p.2_ANI3q<- glmmTMB(HATCHED ~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         data=ANI3, 	
-                         family = poisson(link="log"))	
-Fled.p.2_ANI3q<- glmmTMB(FLEDGED ~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         data=ANI3, 	
-                         family = poisson(link="log"))
-Tot.nb2.2_ANI4q<-glmmTMB(TOT_EGGS~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         family="nbinom2", 	
-                         data = ANI4)	
-Inc.nb2.2_ANI4q<-glmmTMB(EGGS_UNBURIED~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         family="nbinom2", 	
-                         data = ANI4)	
-Hatc.p.2_ANI4q<- glmmTMB(HATCHED ~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         data=ANI4, 	
-                         family = poisson(link="log"))	
-Fled.p.2_ANI4q<- glmmTMB(FLEDGED ~poly(FEM,2)+SITE+offset(log(FEM))+(1|SITE:LOCATION)+(1|YEAR),	
-                         data=ANI4, 	
-                         family = poisson(link="log"))
-
-## Binomial models of successes in reproduction measures
-EpEg.b.1q <- glmmTMB(ANI2.EpEg ~poly(FEM,2)+ANI2.NESTS+ANI2.SITE+(1|ANI2.SITE:ANI2.LOCATION)+(1|ANI2.YEAR), 
-                     data=ANI_EpEg, 
-                     weights = ANI2.TOT_EGGS,
-                     family = binomial(link = "logit"))	
-HpEg.b.1q <- glmmTMB(ANI2.HpEg~poly(FEM,2)+ANI2.NESTS+ANI2.SITE+(1|ANI2.SITE:ANI2.LOCATION)+(1|ANI2.YEAR), 	
-                     data=ANI_HpEg, 	
-                     weights = ANI2.EGGS_UNBURIED,
-                     family = binomial(link = "logit"))	
-FpHa.b.1q <- glmmTMB(ANI2.FpHa ~poly(FEM,2)+ANI2.NESTS+ANI2.SITE+(1|ANI2.SITE:ANI2.LOCATION)+(1|ANI2.YEAR), 
-                     data=ANI_FpHa, 
-                     weights=ANI2.HATCHED,
-                     family = binomial(link = "logit"))
-EpEg.b.1_ANI3q <- glmmTMB(ANI3.EpEg ~poly(FEM,2)+ANI3.SITE+(1|ANI3.SITE:ANI3.LOCATION)+(1|ANI3.YEAR), 
-                          data=ANI3_EpEg, 
-                          weights = ANI3.TOT_EGGS,
-                          family = binomial(link = "logit"))	
-HpEg.b.1_ANI3q <- glmmTMB(ANI3.HpEg~poly(FEM,2)+ANI3.SITE+(1|ANI3.SITE:ANI3.LOCATION)+(1|ANI3.YEAR), 	
-                          data=ANI3_HpEg, 	
-                          weights = ANI3.EGGS_UNBURIED,
-                          family = binomial(link = "logit"))	
-FpHa.b.1_ANI3q <- glmmTMB(ANI3.FpHa ~poly(FEM,2)+ANI3.SITE+(1|ANI3.SITE:ANI3.LOCATION)+(1|ANI3.YEAR), 
-                          data=ANI3_FpHa, 
-                          weights=ANI3.HATCHED,
-                          family = binomial(link = "logit"))
-EpEg.b.1_ANI4q <- glmmTMB(ANI4.EpEg ~poly(FEM,2)+ANI4.SITE+(1|ANI4.SITE:ANI4.LOCATION)+(1|ANI4.YEAR), 
-                          data=ANI4_EpEg, 
-                          weights = ANI4.TOT_EGGS,
-                          family = binomial(link = "logit"))	
-HpEg.b.1_ANI4q <- glmmTMB(ANI4.HpEg~poly(FEM,2)+ANI4.SITE+(1|ANI4.SITE:ANI4.LOCATION)+(1|ANI4.YEAR), 	
-                          data=ANI4_HpEg, 	
-                          weights = ANI4.EGGS_UNBURIED,
-                          family = binomial(link = "logit"))	
-FpHa.b.1_ANI4q <- glmmTMB(ANI4.FpHa ~poly(FEM,2)+ANI4.SITE+(1|ANI4.SITE:ANI4.LOCATION)+(1|ANI4.YEAR), 
-                          data=ANI4_FpHa, 
-                          weights=ANI4.HATCHED,
-                          family = binomial(link = "logit"))
-
 #outputting supplemental tables
 df1<-as.data.frame(cbind(
   (rbind(
@@ -935,153 +821,6 @@ df5<-as.data.frame(cbind(
                           `FEM`="Female group size",
                           `(Intercept)`="Intercept"))))))[-c(1,2,9:12)])
 
-df6<-as.data.frame(rbind(
-  c("Proportion incubated", NA, NA, NA, NA, NA),
-  (tidy(EpEg.b.1q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI4.SITELC`="Study Site"))), 
-  c("Proportion hatched", NA, NA, NA, NA, NA),
-  (tidy(HpEg.b.1q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI4.SITELC`="Study Site"))), 
-  c("Proportion fledged", NA, NA, NA, NA, NA),
-  (tidy(FpHa.b.1q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI4.SITELC`="Study Site")))))
-df7<-as.data.frame(cbind(
-  (rbind(
-    c(NA, NA, "Eggs Laid", NA, NA, NA, NA, NA),
-    (tidy(Tot.nb2.1_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Incubated", NA, NA, NA, NA, NA),
-    (tidy(Inc.nb2.1_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Hatched", NA, NA, NA, NA, NA),
-    (tidy(Hatc.p.1_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Chicks Fledged", NA, NA, NA, NA, NA),
-    (tidy(Fled.p.1_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))))),
-  (rbind(
-    c(NA, NA, "Eggs Laid per capita", NA, NA, NA, NA, NA),
-    (tidy(Tot.nb2.2_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Incubated per capita", NA, NA, NA, NA, NA),
-    (tidy(Inc.nb2.2_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Hatched per capita", NA, NA, NA, NA, NA),
-    (tidy(Hatc.p.2_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Chicks Fledged per capita", NA, NA, NA, NA, NA),
-    (tidy(Fled.p.2_ANI3q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))))))[-c(1,2,9:12)])
-
-df8<-as.data.frame(rbind(
-  c("Proportion incubated", NA, NA, NA, NA, NA),
-  (tidy(EpEg.b.1_ANI3q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI3.SITELC`="Study Site"))), 
-  c("Proportion hatched", NA, NA, NA, NA, NA),
-  (tidy(HpEg.b.1_ANI3q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI3.SITELC`="Study Site"))), 
-  c("Proportion fledged", NA, NA, NA, NA, NA),
-  (tidy(FpHa.b.1_ANI3q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI3.SITELC`="Study Site")))))
-
-df9<-as.data.frame(cbind(
-  (rbind(
-    c(NA, NA, "Eggs Laid", NA, NA, NA, NA, NA),
-    (tidy(Tot.nb2.1_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Incubated", NA, NA, NA, NA, NA),
-    (tidy(Inc.nb2.1_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Hatched", NA, NA, NA, NA, NA),
-    (tidy(Hatc.p.1_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Chicks Fledged", NA, NA, NA, NA, NA),
-    (tidy(Fled.p.1_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))))),
-  (rbind(
-    c(NA, NA, "Eggs Laid per capita", NA, NA, NA, NA, NA),
-    (tidy(Tot.nb2.2_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Incubated per capita", NA, NA, NA, NA, NA),
-    (tidy(Inc.nb2.2_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Eggs Hatched per capita", NA, NA, NA, NA, NA),
-    (tidy(Hatc.p.2_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))),
-    c(NA, NA, "Chicks Fledged per capita", NA, NA, NA, NA, NA),
-    (tidy(Fled.p.2_ANI4q)%>%
-       mutate(term=recode(term, 
-                          `FEM`="Female group size",
-                          `(Intercept)`="Intercept"))))))[-c(1,2,9:12)])
-
-df10<-as.data.frame(rbind(
-  c("Proportion incubated", NA, NA, NA, NA, NA),
-  (tidy(EpEg.b.1_ANI4q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI4.SITELC`="Study Site"))), 
-  c("Proportion hatched", NA, NA, NA, NA, NA),
-  (tidy(HpEg.b.1_ANI4q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI4.SITELC`="Study Site"))), 
-  c("Proportion fledged", NA, NA, NA, NA, NA),
-  (tidy(FpHa.b.1_ANI4q)[-c(1:2)]%>%
-     mutate(term=recode(term, 
-                        `FEM`="Female group size",
-                        `(Intercept)`="Intercept", 
-                        `ANI4.SITELC`="Study Site")))))
-
 #summary stats of various datsets
 sumstats<-cbind(
   rbind(
@@ -1127,7 +866,6 @@ sumstats<-cbind(
     sum(!is.na(ANI4$HATCHED)), 
     sum(!is.na(ANI4$FLEDGED)))
 )
-
   
 rownames(sumstats)<-c("Unpooled dataset", "Eggs Laid", "Eggs Incubated", "Eggs Hatched", "Chicks Fledged", 
                       "Pooled by group-year", "Eggs Laid", "Eggs Incubated", "Eggs Hatched", "Chicks Fledged", 
@@ -1172,12 +910,6 @@ data_frames <- list("S1 Summary statistics of different datasets" = sumstats,
                     "S3 First nest only data, probability models" = df2,
                     "S4 First successful nest only data, count models" = df3,
                     "S5 First successful nest only data, probability models" = df4,
-                    "S6 Pooled group-year data, quadratic added, count models" = df5,
-                    "S7 Pooled group-year data, quadratic added, probability models" = df6,
-                    "S8 First nest only data, quadratic added, count models" = df7,
-                    "S9 First nest only data, quadratic added, probability models" = df8,
-                    "S10 First successful nest only data, quadratic added, count models" = df9,
-                    "S11 First successful nest only data, quadratic added, probability models" = df10, 
                     "S12 Nest count and group size" = NESTING,
                     "S13 Survival of nest and group size" = SURVIVAL
                     )
@@ -1204,18 +936,3 @@ ggbarstats(
   subtitle = paste0(
     "Fisher's exact test", "\np-value = ",
     ifelse(test2$p.value < 0.001, "< 0.001", round(test2$p.value, 3))))
-
-#Anova looking at the reported models with and without quadratic terms----
-anova(Tot.nb2.1, Tot.nb2.1q)
-anova(Inc.nb2.1, Inc.nb2.1q)
-anova(Hatc.p.1, Hatc.p.1q)
-anova(Fled.p.1, Fled.p.1q)
-anova(Tot.nb2.2, Tot.nb2.2q)
-anova(Inc.nb2.2, Inc.nb2.2q)
-anova(Hatc.p.2, Hatc.p.2q)
-anova(Fled.p.2, Fled.p.2q)
-anova(EpEg.b.1, EpEg.b.1q)
-anova(HpEg.b.1, HpEg.b.1q)
-anova(FpHa.b.1, FpHa.b.1q)
-
-
