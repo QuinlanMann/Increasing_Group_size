@@ -13,7 +13,7 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 -   Author: Quinlan M Mann
 -   Other contributors: Leanne A Grieves, Gregory Schmaltz, & James S Quinn
 -   Date created: 2023-10-31
--   Date modified: 2024-08-15
+-   Date modified: 2024-09-7
 
 ## Dataset Version and Release History
 
@@ -121,8 +121,8 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 ## Summary Metrics
 
 -   File count: 4
--   Total file size: 126KB
--   Range of individual file sizes: 5 KB - 54 KB
+-   Total file size: 101.2KB
+-   Range of individual file sizes: 9.12 KB - 38.7 KB
 -   File formats: .csv, .R, .xlsx
 
 ## Table of Contents
@@ -150,15 +150,15 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 ## Details for: SBAN_Reproductive_success.R
 -   Description: An r file containing code necessary to run all analyses
 -   Format(s): .R
--   Size(s): 54 KB
--   Dimensions: 1221 lines
+-   Size(s): 38.7 KB
+-   Dimensions: 894 lines
 -   Variables: n/a
 
 ## Details for: NEST_SUMMARY_ANIS.csv
 
 -   Description: Data used for analyses of Smooth-billed ani reproductive success
 -   Format(s): .csv
--   Size(s): 19 KB
+-   Size(s): 18.3 KB
 -   Dimensions: 453R x 13C
 -   Variables:
     -   YEAR: Calendar year that the nest and group were observed
@@ -194,8 +194,8 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 ## Details for: Supplemental_Tables.xlsx
 -   Description: Supplemental results for analyses of Smooth-billed ani reproductive success
 -   Format(s): .xlsx
--   Size(s): 50 KB
--   Dimensions: 13 sheets
+-   Size(s): 35.1 KB
+-   Dimensions: 7 sheets
     - S1 Summary statistics of different datasets
         - Summary statistics of all datasets
     - S2 First nest only data, count models
@@ -211,16 +211,16 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
         - model outputs from count data assessing proportion of success across multiple reproductive stages
         - uses the dataset that looked at only first (known) successful nests per group if multiple occurred
     - S12 Nest count and group size
-        - Dimensions: 365R x 2C
+        - Dimensions: 366R x 11C
         - Variables:
-            - FEM: Female group size 
-            - NESTS: Number of (known) nesting attempts
+            - Female group size: Female group size, see man uscript for details 
+            - # of Nest attempts: Number of (known) nesting attempts
         - Also includes output of Fisher's exact test
     - S13 Survival of nest and group size:
-        - Dimensions: 414 x 2C
+        - Dimensions: 415 x 11C
         - Variables:
-            - FEM: Female group size 
-            - SURV: Categorical variable of success
+            - Female group size: Female group size, see man uscript for details 
+            - Survival status of nest: Categorical variable of success
                 - If group fledged at least one chick it was determined to be successful (SUCC)
                 - If group did not fledge at least one chick it was determined to be a failure (FAIL)
         - Also includes output of Fisher's exact test
@@ -228,7 +228,7 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 ## Details for: README.md
 -   Description: Read me containing pertinent information for the dataset and manuscript
 -   Format(s): .txt
--   Size(s): 10.9 KB
--   Dimensions: 252 lines
+-   Size(s): 9.12 KB
+-   Dimensions: 234 lines
 
 END OF README
