@@ -128,8 +128,8 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 ## Summary Metrics
 
 -   File count: 4
--   Total file size: 101.2KB
--   Range of individual file sizes: 9.12 KB - 38.7 KB
+-   Total file size: 100.3 KB
+-   Range of individual file sizes: 9.12 KB - 36.8 KB
 -   File formats: .csv, .R, .xlsx
 
 ## Table of Contents
@@ -157,8 +157,8 @@ Mann Q., Grieves L., Schmaltz G., Quinn J. Per capita reproductive success decre
 ## Details for: SBAN_Reproductive_success.R
 -   Description: An r file containing code necessary to run all analyses
 -   Format(s): .R
--   Size(s): 38.7 KB
--   Dimensions: 894 lines
+-   Size(s): 36.8 KB
+-   Dimensions: 892 lines
 -   Variables: n/a
 
 ## Details for: NEST_SUMMARY_ANIS.csv
