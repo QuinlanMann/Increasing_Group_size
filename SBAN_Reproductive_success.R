@@ -865,9 +865,7 @@ data_frames <- list("S1 Summary statistics of different datasets" = sumstats,
                     "S2 First nest only data, count models" = df1, 
                     "S3 First nest only data, probability models" = df2,
                     "S4 First successful nest only data, count models" = df3,
-                    "S5 First successful nest only data, probability models" = df4,
-                    "S12 Nest count and group size" = NESTING,
-                    "S13 Survival of nest and group size" = SURVIVAL
+                    "S5 First successful nest only data, probability models" = df4
                     )
 
 library(writexl)
